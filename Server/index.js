@@ -13,13 +13,12 @@ app.get('/', (req, res) => {
 
 })
 
-app.post('/', (req, res) => {
+app.post('/items', (req, res) => {
 
     const item = req.body;
 
 
     console.log(req)
-    console.log('data',item)
 
     res.send('data recibida')
 
